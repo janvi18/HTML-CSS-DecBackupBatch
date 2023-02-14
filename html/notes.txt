@@ -1,0 +1,64 @@
+HTML - HyperText Markup Language
+Uses - to create web pages and web applications
+
+Extension --> .html or .htm
+
+Syntax : 
+<html>
+    <head> --> heading tag
+        <title> // title of the page </title>
+    </head>
+    <body>
+        // code
+    </body>
+</html>
+
+Heading tags:
+
+we have 6 types of heading tags
+
+<h1> </h1>
+<h2> </h2>
+<h3> </h3>
+<h4> </h4>
+<h5> </h5>
+<h6> </h6>
+
+Tags:
+<p> - paragraph tag
+<u> - underline tag
+<b> - bold tag
+<i> - italic tag
+<br> - break the row
+<small> - font size [ small ]
+<big> - font size [ big ]
+<del> - delete tag
+<em> - Empasized text [ same as italic tag ]
+<ins> - inserted text  [ same as underline ]
+<strong> - bold the text
+<sub> - subscript text
+<sup> - superscript text [ upside ]
+
+Table Syntax:
+
+<table>
+    <th> --> table heading
+    </th>
+
+    <tr> --> table row
+    </tr>
+
+    <td>    --> table data
+    </td>
+</table>
+
+
+CSS --> Cascading StyleSheets
+
+3 types:
+
+1. Inline CSS
+2. Internal CSS 
+3. External CSS --> 2 files 
+                        1. .html    
+                        2. .css

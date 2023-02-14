@@ -1,0 +1,24 @@
+div {
+    width: 300px;
+    background-color: bisque;
+    margin: auto;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    color: teal;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.box {
+    width: 300px;
+    margin: auto;
+    background-color: cornflowerblue;
+    border: 2px solid;
+}
+
+h3 {
+    font-family: cursive;
+    color: brown;
+    font-size: 22px;
+}

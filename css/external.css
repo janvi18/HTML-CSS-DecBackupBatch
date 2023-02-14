@@ -1,0 +1,17 @@
+body {
+    background-color: #ee6a6a;
+    font-family: "jokerman";
+    font-size: 14px;
+    color: rgb(6, 54, 247);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.p1 {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
