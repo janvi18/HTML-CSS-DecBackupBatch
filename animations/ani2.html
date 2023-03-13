@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Animate</title>
+        <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            animation-name: ani;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        *{box-sizing: border-box;}
+        .box{
+            width: 700px;
+            height: 300px;
+            border: 10px solid black;
+            border-radius: 10px;
+            line-height: 300px;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        .main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @keyframes ani {
+            0%{background-color: brown;}
+            25%{background-color: cadetblue;}
+            50%{background-color: chocolate;}
+            75%{background-color: cornflowerblue;}
+            100%{background-color: crimson;}
+        }
+        span{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            animation-name: bani;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        span:nth-child(1)
+        {
+            top: 10%;
+            left: 1%;
+            animation-duration: 1s;
+            background-color: gold;
+        }
+        span:nth-child(2)
+        {
+            top: 10%;
+            left: 45%;
+            animation-duration: 1s;
+            background-color: darkgreen;
+        }
+        span:nth-child(3){top: 10%;left: 91%;animation-duration: 1s;background-color: gold;}
+        span:nth-child(4){top: 45%;left: 1%;animation-duration: 3s;background-color: darkgoldenrod;}
+        span:nth-child(5){top: 45%;left: 45%;animation-duration: 3s;background-color: darkgreen;}
+        span:nth-child(6){top: 45%;left: 91%;animation-duration: 3s;background-color: gold;}
+        span:nth-child(7){top: 80%;left: 1%;animation-duration: 5s;background-color: darkgoldenrod;}
+        span:nth-child(8){top: 80%;left: 45%;animation-duration: 5s;background-color: darkgreen;}
+        span:nth-child(9){top: 80%;left: 91%;animation-duration: 5s;background-color: darkgoldenrod;}
+        span:nth-child(10){top: 30%;left: 17%;animation-duration: 4s;background-color: darkblue;}
+        span:nth-child(11){top: 30%;left: 75%;animation-duration: 4s;background-color: darkblue;}
+        span:nth-child(12){top: 65%;left: 17%;animation-duration: 4s;background-color: darkblue;}
+        span:nth-child(13){top: 65%;left: 75%;animation-duration: 4s;background-color: darkblue;}
+        @keyframes bani {
+            0%{transform: scale(0) rotate(0deg);opacity: 1;}
+            100%{transform: scale(1) rotate(360deg);opacity: 0;border-radius: 50%;}
+        }
+    </style>
+    </head>
+    <body>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="main">
+            <div class="box">ROYAL TECHNOSOFT</div>
+        </div>
+    </body>
+</html>
+
+
