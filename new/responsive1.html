@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            *{box-sizing: border-box;margin: 0;padding: 0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+            body{background: rgb(91, 97, 102);}
+            header{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 40x 100px;
+                align-items: center;
+                z-index: 1000;
+            }
+            header .logo{
+                position: relative;
+                font-size: 30px;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+            header .log{
+                color: white;
+                text-decoration: none;
+            }
+            .banner{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                padding: 0px 100px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .banner::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 400px;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .banner video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: .1;
+            }
+            .banner .txt{
+                position: relative;
+                max-width: 600px;
+                z-index: 2;
+            }
+            .banner .txt h2{
+                color: white;
+                font-size: 30px;
+            }
+            .banner .txt p{
+                color: white;
+                font-size: 20px;
+                margin: 5px 0 25px;
+            }
+            .banner .txt a{
+                position: relative;
+                text-decoration: none;
+                display: inline-block;
+                background: white;
+                color: black;
+                font-size: 20px;
+                margin: 5px 0 2px;
+                padding: 15px 20px;
+                text-decoration: uppercase;
+                border-radius: 5px;
+            }
+            .banner .vbox{
+                position: relative;
+                width: 100%;
+                height: 400px;
+                background-color: white;
+                margin-left: 40px;
+            }
+            .banner .vbox video{
+                opacity: 1;
+            }
+            .banner .sci{
+                position: absolute;
+                bottom: 20px;
+                letter-spacing: 100px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .banner .sci li{
+                list-style: none;
+            }
+            .banner .sci li a{
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .banner .sci li a img{
+                transform: scale(0.5);
+                filter: invert(1);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">LOGO</a>
+            <a href="#" class="log">LOGIN</a>
+        </header>
+        <div class="banner">
+            <video src="sunset.mp4" muted autoplay loop type="mp4" ></video>
+            <div class="txt">
+                <h2>Janvi Shah</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis molestias laboriosam quaerat ut in amet eveniet commodi!
+                </p>
+                <a href="#">Read More..</a>
+            </div>
+            <div class="vbox">
+                <video src="sunset.mp4" muted autoplay loop type="mp4" controls></video>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

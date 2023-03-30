@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>CARD</title>
+        <style>
+            *{box-sizing: border-box;margin: 0;padding: 0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #09161d;
+            }
+            .card{
+                width: 320px;
+                height: 420px;
+                background-color: #122;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+            }
+            .card:before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: darkslategrey;
+                top: -50%;
+                transform: skewY(345deg);
+                transition: .5s;
+            }
+            .card:hover:before{
+                transform: skewY(390deg);
+            }
+            .card:after{
+                content: 'Apple';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                font-size: 125px;
+                color: rgba(0, 0, 0, 0.1);
+            }
+            .card .head{
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
+                font-size: 50px;
+                transition: .5s;
+            }
+            .card:hover .head{
+                font-size: 30px;
+            }
+            .card .cont{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50%;
+                flex-direction: column;
+                color: white;
+                letter-spacing: 1px;
+                z-index: 1;
+            }
+            .card .cont .buy{
+                position: relative;
+                padding: 10px 30px;
+                background-color: royalblue;
+                border-radius: 30px;
+                margin-top: 50px;
+                opacity: 0;
+                text-decoration: none;
+                color: white;
+            }
+            .card:hover .cont .buy{
+                top: 0;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="head">
+                <h1>Apple</h1>
+            </div>
+            <div class="cont">
+                <h3>Iphone</h3>
+                <h2>$499.<small>99</small></h2>
+                <a href="#" class="buy">Buy Now</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>BOX</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background: rgb(255, 190, 106);
+            }
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            .main{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .box{
+                width: 250px;
+                height: 250px;
+                padding: 25px;
+                background: transparent;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                border-radius: 5px;
+                transition: .5s;
+                position: relative;
+            }
+            .box h1{
+                font-size: 20px;
+                transition: .5s;
+            }
+            .box p{
+                transition: .5s;
+            }
+            .box:before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 0;
+                height: 0;
+                background: url('1.JPG');
+                z-index: -1;
+                transition: .5s;
+            }
+            .box:hover:before{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+            .box:hover h1,.box:hover p{
+                color: white;
+            }
+            .box:hover{
+                border: 10px solid white;
+                box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.4);
+                transition-delay: .5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="box"> 
+                <h1>Your Name</h1><p>Lorem ipsum dolor sit amet dolorum illum cumque similique eum iure assumenda ratione quas, ex et consequatur!</p>
+            </div>
+        </div>
+    </body>
+</html>
